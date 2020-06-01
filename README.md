@@ -15,12 +15,12 @@ that should be it for now, but I'm open to questions. I'll modify if I realize I
 
 
 # ToDo
-#Fix Filepaths so we're not in /home/pi. 
--Fix WifiConnect. We really don't need to have it sleep, but I was lazy. This turned out much bigger than I had planned. 
--Find a better way than `doComm` ("do command") and `doCommNoCheck`. I feel like this should have a simple solution, but I've got a block.
--I HATE calling the uiautomator. It's not terrible that I'm "cheating" the way it gets parsed, but calling it takes FOREVER. 
--Find a more effective way to confirm `chromeDone` and `accountsDone`. There's quite a bit that can be looked at in `adb shell settings list GLOBAL` that I haven't gotten to paying close attention to yet.
--seperate `accountsDone` into `accountsDone` and `tutorialDone`
--Fix the bugginess between screens. 
--Create a method to include the option to have a different sign in account for each tablet. email1@domain.com, email2@domain.com.. This must be stored in a temp file in case we have to reboot.
--There's a bit more I can't remember at the moment..
+- Fix Filepaths so we're not in /home/pi. 
+- Fix WifiConnect. We really don't need to have it sleep, but I was lazy. This turned out much bigger than I had planned. 
+- Find a better way than `doComm` ("do command") and `doCommNoCheck`. I feel like this should have a simple solution, but I've got a block.
+- I HATE calling the uiautomator. It's not terrible that I'm "cheating" the way it gets parsed, but calling it takes FOREVER. 
+- Find a more effective way to confirm `chromeDone` and `accountsDone`. There's quite a bit that can be looked at in `adb shell settings list GLOBAL` that I haven't gotten to paying close attention to yet.
+- seperate `accountsDone` into `accountsDone` and `tutorialDone`
+- Fix the bugginess between screens. 
+- Create a method to include the option to have a different sign in account for each tablet. email1@domain.com, email2@domain.com.. This must be stored in a temp file in case we have to reboot.
+- There's a bit more I can't remember at the moment..
