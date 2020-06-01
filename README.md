@@ -15,6 +15,16 @@ that should be it for now, but I'm open to questions. I'll modify if I realize I
 
 
 
+# Startup.py
+This is where all the goodstuff is, and all the action happens. 
+
+# Wifi.sh
+Finding the correct wifi takes more than a few taps. I wasn't sure how to parse XML in python, so I instead opted to utilize the uiautomator. I have a strong wifi signal, so it should usually be the first tap. In this case, that's fine, ish. But, it will take much longer than properly parsing the XML from the window dump if you don't expect to be one of the top access points. 
+
+# Pull.sh
+Just a helper script to pull all 3rd party apps that I downloaded from the amazon store. I've used this numerous times on numerous devices. Could undoubtedly be used just for everyday app backups. Does not save data, though..
+
+
 # ToDo
 - Fix Filepaths so we're not in /home/pi. 
 - Fix WifiConnect. We really don't need to have it sleep, but I was lazy. This turned out much bigger than I had planned. 
@@ -25,3 +35,4 @@ that should be it for now, but I'm open to questions. I'll modify if I realize I
 - Fix the bugginess between screens. 
 - Create a method to include the option to have a different sign in account for each tablet. email1@domain.com, email2@domain.com.. This must be stored in a temp file in case we have to reboot.
 - There's a bit more I can't remember at the moment..
+
